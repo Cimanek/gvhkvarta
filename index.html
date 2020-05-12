@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="">
+    <meta charset="utf-8">
+    <title>Úvod|gvhkvarta.cf</title>
+    <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   <div class="header">
+     <div class="logo"><a href="index.html"><img src="logo-03.png" alt="Logo naší třídy" height="30px" ></a></div>
+     <div class="search"><a href="search.html"><i class="fas fa-search"></i>
+
+</a></div>
+   </div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+  </body>
+</html>
