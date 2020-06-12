@@ -1,14 +1,26 @@
-/* IDEA: To co je moje */
-body{
-  font-family:sans-serif ;
+/* To co je moje */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
   margin: 0;
 }
 
-.logo{
+.content a {
+  color: #0257d6;
+}
+
+.content a:hover {
+  text-decoration: none;
+}
+
+.logo {
   float: left;
 }
 
-.search{
+.search {
   float: right;
   height: 30px;
 }
@@ -17,14 +29,63 @@ body{
   height: 30px;
 }
 
+/*Posty*/
+.post {
+  border-left: 4px solid #2dba02;
+  padding: 18px;
+  box-shadow: 10px 11px 20px 0px #707070;
+  transition: 0.5s;
+}
 
+.post:hover {
+  box-shadow: 10px 11px 20px 10px #383838;
+}
+
+.post_title {
+  font-size: 2em;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+.post_info_date {
+  font-style: italic;
+  color: #333333;
+}
+
+.post_info_author {
+  font-style: italic;
+  color: #333333;
+}
+
+/*Kalkulačky*/
+
+.fyzika_calc {
+  height: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.fyzika_calc_expand {
+  height: 100%;
+  overflow: visible;
+}
+
+.fyzika_title {
+  font-size: 2em;
+  cursor: pointer;
+}
 
 /* IDEA: To co jsem ukradl */
+
+@use "@material/button";
+
+@include button.core-styles;
+
 .header {
   background-color: #e1e31a;
   padding: 30px;
   text-align: center;
-  height : 30px;
+  height: 30px;
 }
 
 #navbar {
@@ -41,7 +102,7 @@ body{
   text-decoration: none;
   font-size: 17px;
   background-color: #252f6c;
-  transition: color .3s, box-shadow .3s;
+  transition: color 0.3s, box-shadow 0.3s;
   box-shadow: inset 0px 0 0 0 #e1e31a;
   border-bottom: solid 8px #e1e31a;
 }
@@ -53,11 +114,6 @@ body{
   background: #252f6c;
 }
 
-
-.content {
-  padding: 16px;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -66,4 +122,10 @@ body{
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+.content {
+  padding: 16px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
