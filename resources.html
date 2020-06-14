@@ -15,13 +15,6 @@
       })(window, document, 'script', 'dataLayer', 'GTM-MM79V2N');
     </script>
     <!-- End Google Tag Manager -->
-    
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-     
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="" />
     <meta charset="utf-8" />
@@ -82,72 +75,104 @@
 
     <div id="navbar">
       <a class="active" href="index.html">Úvod</a>
-      <a href="kalkulacky.html">Kalkulačky</a>
+      <a href="kalkulacky.html">Vzorce a Kalkulačky</a>
       <a href="javascript:void(0)">Contact</a>
     </div>
 
     <div class="content">
-      <div class="vyber">
-        <h1>Vyberte si z jakého předmětu chcete kalkulačku</h1>
-        <div class="vyber_tlacitko"><a href="#fyzika">Fyzika</a></div>
-        <div class="vyber_tlacitko"><a href="#matematika">Matematika</a></div>
-        <div class="vyber_tlacitko"><a href="#chemie">Chemie</a></div>
-      </div>
-      <script src="kalkulacky.js"></script>
-      <div class="fyzika" id="myDIV">
-        <div class="fyzika_title" onclick="changeSize()">Fyzika</div>
-        <div class="fyzika_calcs" id="calcs">
-          <div class="calcs_nav">
-            <h4>Vyberte si typ Kalkulačky</h4>
+      Na tomto tomto webu jsem využil následujíci zdroje:
+      <ul>
+        <li>
+          <a href="https://codepen.io/scanfcode/pen/MEZPNd">Footer Template</a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
+            >Fixed Navbar</a
+          >
+        </li>
+        <li><a href="https://fontawesome.com/icons/">Ikonky</a></li>
+      </ul>
+    </div>
 
-            <ul>
-              <li><a href="#rezistory">Rezistory</a></li>
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Corrupti, tempore aspernatur! Eveniet, voluptate reprehenderit! Id
+              rerum sapiente perferendis ullam nesciunt numquam dignissimos
+              quasi maxime quod! Optio quibusdam doloribus dolorum molestias!
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Užitečné odkazy</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="https://discord.gg/8ZVu3na"
+                  >Přpojte se na náš Discord server</a
+                >
+              </li>
+
+              <li>
+                <a href="resources.html">Použitý kód a fotky</a>
+              </li>
             </ul>
           </div>
-          <div class="fyzika_calc" id="rezistory">
-            <div class="fyzika_subtitle">Rezistory</div>
-            <div class="fyzika_calc_title">Sériově zapojený rezistory</div><br>
-            
-            <div class="row">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="ser_rez1" type="text">
-                    <label for="ser_rez2">Rezistor 1</label>
-                  </div>
-                </div>
-              </form>
-            </div>
 
-            <div class="row ">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="ser_rez2" type="text" class="validate">
-                    <label for="ser_rez2">Rezistor 2</label>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="count" onclick="serRez()">
-              <a class="waves-effect waves-light btn light-blue darken-4">button</a>
-            </div>
-           </div>
-            <b>Výsledek je:</b>
-            <div id="ser_rez_vys"></div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Rychlé odkazy</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="https://github.com/Kendy205/gvhkvarta">Přidejte kód</a>
+              </li>
+              <li>
+                <a href="privacipolicy.html">Privacy Policy</a>
+              </li>
+              <li><a href="sitemap.html">Mapa stránek</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2020 All Rights Reserved by
+              <a href="#">gvhkvarta.cf</a>.
+            </p>
+            <p class="made">
+              Made with <i class="fas fa-heart"></i> by Tomáš Kebrle, Daniel
+              Ransdorf
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
 
     <!--Scripty-->
-    <script src="kalkulacky.js"></script>
     <script>
-      function changeSize() {
-        var element = document.getElementById('calcs');
-        element.classList.toggle('fyzika_calc_expand');
-      }
-
       window.onscroll = function () {
         myFunction();
       };
@@ -162,12 +187,6 @@
           navbar.classList.remove('sticky');
         }
       }
-    </script>
-
-    <script>
-      import { MDCRipple } from '@material/ripple';
-
-      const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
     </script>
   </body>
 </html>
