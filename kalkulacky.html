@@ -18,7 +18,6 @@
     
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
      
@@ -30,19 +29,7 @@
       src="https://kit.fontawesome.com/29ece32e74.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -70,19 +57,16 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="header">
-      <div class="logo">
-        <a href="index.html">
+      <div class="header_logo">
+        <a href="index">
           <img src="logo-03.png" alt="Logo naší třídy" height="30px" />
         </a>
-      </div>
-      <div class="search">
-        <a href="search.html"><i class="fas fa-search"></i> </a>
       </div>
     </div>
 
     <div id="navbar">
-      <a class="active" href="index.html">Úvod</a>
-      <a href="kalkulacky.html">Kalkulačky</a>
+      <a class="active" href="index">Úvod</a>
+      <a href="kalkulacky">Kalkulačky</a>
       <a href="javascript:void(0)">Contact</a>
     </div>
 
@@ -129,7 +113,7 @@
               <form class="col s12">
                 <div class="row">
                   <div class="input-field col s12">
-                    <input id="ser_rez2" type="text" class="validate">
+                    <input id="ser_rez2" type="text">
                     <label for="ser_rez2">Rezistor 2</label>
                   </div>
                 </div>
@@ -160,7 +144,7 @@
                 </form>
               </div>
   
-              <div class="row ">
+              <div class="row">
                 <form class="col s12">
                   <div class="row">
                     <div class="input-field col s12">
@@ -175,7 +159,7 @@
               </div>
              </div>
               <b>Výsledek je:</b>
-              <div id="par_rez_vys"></div> <b>Ω</b>
+              <div id="par_rez_vys"></div> <b>Ω</b><br>
 
 
           </div>
@@ -183,14 +167,38 @@
       </div>
     </div>
 
+ <!--Footer-->   
+
+ <footer class="page-footer grey darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">GVH KVARTA</h5>
+        <p class="grey-text text-lighten-4">Jednoduchý web stvořený pro naší třídu. <br>
+        Používáním webu také souhlasíte s <a href="podminky">Podmínkama používání</a>
+        </p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Odkazy</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3 footer_link" href="#!">Přispějte svým kódem</a></li>
+          <li><a class="grey-text text-lighten-3 footer_link" href="sitemap">Mapa Stránek</a></li>
+          <li><a class="grey-text text-lighten-3 footer_link" href="resources">Zdroje</a></li>
+          <li><a class="grey-text text-lighten-3 footer_link" href="https://discord.gg/8ZVu3na">Připoj se na náš Discord</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2020 gvhkvarta.cf
+    <a class="grey-text text-lighten-4 right" href="podminky">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
     <!--Scripty-->
     <script src="kalkulacky.js"></script>
     <script>
-      function changeSize() {
-        var element = document.getElementById('calcs');
-        element.classList.toggle('fyzika_calc_expand');
-      }
-
       window.onscroll = function () {
         myFunction();
       };

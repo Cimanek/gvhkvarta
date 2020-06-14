@@ -15,35 +15,24 @@
       })(window, document, 'script', 'dataLayer', 'GTM-MM79V2N');
     </script>
     <!-- End Google Tag Manager -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="" />
-    <meta charset="utf-8" />
-    <title>Úvod|gvhkvarta.cf</title>
+
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="" />
+    <meta charset="utf-8" />
+    <title>Úvod|gvhkvarta.cf</title>
     <script
       src="https://kit.fontawesome.com/29ece32e74.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -71,38 +60,32 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="header">
-      <div class="logo">
+      <div class="header_logo">
         <a href="index">
           <img src="logo-03.png" alt="Logo naší třídy" height="30px" />
         </a>
-      </div>
-      <div class="search">
-        <a href="search"><i class="fas fa-search"></i> </a>
       </div>
     </div>
 
     <div id="navbar">
       <a class="active" href="index">Úvod</a>
-      <a href="kalkulacky">Vzorce a Kalkulačky</a>
+      <a href="kalkulacky">Kalkulačky</a>
       <a href="javascript:void(0)">Contact</a>
     </div>
-
+    <!--CONTENT-->
     <div class="content">
-      Na tomto tomto webu jsem využil následujíci zdroje:
+      <h1>Mapa stránek</h1>
       <ul>
-        <li>
-          <a href="https://codepen.io/scanfcode/pen/MEZPNd">Footer Template</a>
-        </li>
-        <li>
-          <a href="https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
-            >Fixed Navbar</a
-          >
-        </li>
-        <li><a href="https://fontawesome.com/icons/">Ikonky</a></li>
+        <li><a href="index">Úvodní stránka</a></li>
+        <li><a href="kalkulacky">Kalkulačky a vzorce</a></li>
+        <li><a href="resources">Zdroje</a></li>
+        <li><a href="privacy">Podmínky používání</a></li>
       </ul>
     </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-    <!-- Site footer -->
+    <!--Footer-->
+
     <footer class="page-footer grey darken-3">
       <div class="container">
         <div class="row">
@@ -152,8 +135,8 @@
         </div>
       </div>
     </footer>
-
     <!--Scripty-->
+    <script src="kalkulacky.js"></script>
     <script>
       window.onscroll = function () {
         myFunction();
@@ -169,6 +152,12 @@
           navbar.classList.remove('sticky');
         }
       }
+    </script>
+
+    <script>
+      import { MDCRipple } from '@material/ripple';
+
+      const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
     </script>
   </body>
 </html>
