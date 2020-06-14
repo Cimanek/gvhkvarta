@@ -94,6 +94,7 @@
         <div class="vyber_tlacitko"><a href="#chemie">Chemie</a></div>
       </div>
       <script src="kalkulacky.js"></script>
+
       <div class="fyzika" id="myDIV">
         <div class="fyzika_title" onclick="changeSize()">Fyzika</div>
         <div class="fyzika_calcs" id="calcs">
@@ -101,13 +102,18 @@
             <h4>Vyberte si typ Kalkulačky</h4>
 
             <ul>
-              <li><a href="#rezistory">Rezistory</a></li>
+              <li><a href="#rezistory_ser">Sériově zapojený rezistory</a></li>
+              <li><a href="#rezistory_par">Parelelně zapojený rezistory</a></li>
             </ul>
           </div>
-          <div class="fyzika_calc" id="rezistory">
+      
+<!-- Sériově zapojený rezistory-->
+          <div class="fyzika_calc" id="rezistory_ser">
             <div class="fyzika_subtitle">Rezistory</div>
             <div class="fyzika_calc_title">Sériově zapojený rezistory</div><br>
-            
+            <div class="fyzika_calc_content">
+              Vzorec pro výpočet je R1 + R2, výsledek je poté v Ohmech
+            </div><br>
             <div class="row">
               <form class="col s12">
                 <div class="row">
@@ -130,11 +136,48 @@
               </form>
             </div>
             <div class="count" onclick="serRez()">
-              <a class="waves-effect waves-light btn light-blue darken-4">button</a>
+              <a class="waves-effect waves-light btn light-blue darken-4">Čáry máry výsledek je tu</a>
             </div>
            </div>
             <b>Výsledek je:</b>
-            <div id="ser_rez_vys"></div>
+            <div id="ser_rez_vys"></div><b>Ω</b>
+            <br><br>
+<!--Pararelní rezistory-->
+            <div class="fyzika_calc" id="rezistory_par">
+              <div class="fyzika_calc_title">Pararelně zapojený rezistory</div><br>
+              <div class="fyzika_calc_content">
+                Vzorec pro výpočet R1 * R2 / R1 + R2
+              </div>
+              <br>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="par_rez1" type="text">
+                      <label for="par_rez1">Rezistor 1</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+  
+              <div class="row ">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="par_rez2" type="text" class="validate">
+                      <label for="par_rez2">Rezistor 2</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="count" onclick="parRez()">
+                <a class="waves-effect waves-light btn light-blue darken-4">Výpočítej to!</a>
+              </div>
+             </div>
+              <b>Výsledek je:</b>
+              <div id="par_rez_vys"></div> <b>Ω</b>
+
+
           </div>
         </div>
       </div>
