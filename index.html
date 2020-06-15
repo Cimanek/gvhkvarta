@@ -19,6 +19,7 @@
     <link rel="icon" type="image/png" href="" />
     <meta charset="utf-8" />
     <title>Úvod|gvhkvarta.cf</title>
+
     <script
       src="https://kit.fontawesome.com/29ece32e74.js"
       crossorigin="anonymous"
@@ -58,6 +59,7 @@
 
       gtag('config', 'UA-130079000-2');
     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -71,56 +73,103 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="header">
-      <div class="logo">
-        <a href="index">
-          <img src="logo-03.png" alt="Logo naší třídy" height="30px" />
-        </a>
+    <!--PRO MOBIL-->
+    <div id="mojeSidenav" class="mojesidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index">Úvod</a>
+      <a href="kalkulacky">Vzorce a kalkulačky</a>
+      <a href="onasitride">O naší třídě</a>
+    </div>
+    <!--PRO PC-->
+    <div class="desktop_nav hide-on-med-and-down">
+      <div class="header">
+        <div class="logo">
+          <a href="index">
+            <img src="logo-03.png" alt="Logo naší třídy" height="30px" />
+          </a>
+        </div>
+      </div>
+      <div id="navbar">
+        <a class="active" href="index">Úvod</a>
+        <a href="kalkulacky">Vzorce a Kalkulačky</a>
+        <a href="onasitride">O naší třídě</a>
       </div>
     </div>
 
-    <div id="navbar">
-      <a class="active" href="index">Úvod</a>
-      <a href="kalkulacky">Vzorce a Kalkulačky</a>
-      <a href="javascript:void(0)">Contact</a>
-    </div>
-
-    <div class="content">
-      <div class="post_tags">
-        <div class="post_tag"><a href=""></a></div>
-        <div class="post_tag"><a href=""></a></div>
-        <div class="post_tag"><a href=""></a></div>
-        <div class="post_tag"><a href=""></a></div>
-        <div class="post_tag"><a href=""></a></div>
-      </div>
+    <div class="content container" id="main">
+      <span
+        onClick="openNav()"
+        class="openbtn show-on-med-and-down hide-on-large-only"
+        >☰</span
+      >
       <!-- Posty -->
-      <div class="post">
-        <div class="post_title">Vítejte</div>
-        <div class="post_info">
-          <div class="post_info_author">
-            <i class="far fa-user"></i>
-            Tomáš Kebrle
+      <div class="row">
+        <div class="col l6 xl6 s12">
+          <div class="post hoverable card-panel">
+            <div class="post_title">Vzorce a Kalkulačky</div>
+            <div class="post_info">
+              <div class="post_info_author">
+                <i class="far fa-user"></i>
+                Tomáš Kebrle
+              </div>
+              <div class="post_info_date">
+                <i class="far fa-clock"></i>
+                15/6/2020
+              </div>
+              <br />
+              <div class="post_content flow-text">
+                Ahoj, jak už asi víte tak jsem na téhle stránce udělal
+                kalkulačky, které vám pomůžou s výpočtem vzorců, ale nejsem si
+                jistý jaké další kalkulačky/vzorce tam mám přidat takže pokud o
+                nějakých víte tak je prosím vyplňte do formuláře
+                <a href="formular">na tomto odkazu</a><br />
+                Předem děkuji
+              </div>
+            </div>
           </div>
-          <div class="post_info_date">
-            <i class="far fa-clock"></i>
-            12/6/2020
-          </div>
-          <br />
-          <div class="post_content">
-            Vítám vás na našem novém webu, doufám že se vám líbí. <br />
-            Na tomhle webu sice pravděpodobně nenajdete výpisky, ale připravili
-            jsme pro vás spoustu jiných věcí jako například
-            <a href="kalkulacky"
-              >Výpis všech vzorců a dokonce proněkteré Kalkulačky</a
-            >
-            A postupně přidáme další. <br />
-            V patičce stránky najdete spoustu užitečných věcí, pokud chcete
-            můžete se tam kouknout na celý kód a spoustu dalších věcí
+        </div>
+
+        <div class="col l6 xl6 s12">
+          <div class="post hoverable card-panel">
+            <div class="post_title">Vítejte</div>
+            <div class="post_info">
+              <div class="post_info_author">
+                <i class="far fa-user"></i>
+                Tomáš Kebrle
+              </div>
+              <div class="post_info_date">
+                <i class="far fa-clock"></i>
+                12/6/2020
+              </div>
+              <br />
+              <div class="post_content flow-text">
+                Vítám vás na našem novém webu, doufám že se vám líbí. <br />
+                Na tomhle webu sice pravděpodobně nenajdete výpisky, ale
+                připravili jsme pro vás spoustu jiných věcí jako například
+                <a href="kalkulacky"
+                  >Výpis všech vzorců a dokonce proněkteré Kalkulačky</a
+                >
+                A postupně přidáme další. <br />
+                V patičce stránky najdete spoustu užitečných věcí, pokud chcete
+                můžete se tam kouknout na celý kód a spoustu dalších věcí
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br /><br />
     <br />
     <br />
     <br />
@@ -134,20 +183,13 @@
     <br />
     <br />
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <br /><br />
     <br />
     <br />
     <br />
 
     <!-- Site footer -->
-    <footer class="page-footer grey darken-3">
+    <footer class="page-footer grey darken-3 flow-text">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -212,6 +254,16 @@
         } else {
           navbar.classList.remove('sticky');
         }
+      }
+
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+      function openNav() {
+        document.getElementById('mojeSidenav').style.width = '350px';
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById('mojeSidenav').style.width = '0';
       }
     </script>
   </body>

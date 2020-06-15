@@ -19,14 +19,6 @@
     <link rel="icon" type="image/png" href="" />
     <meta charset="utf-8" />
     <title>Úvod|gvhkvarta.cf</title>
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script
       src="https://kit.fontawesome.com/29ece32e74.js"
       crossorigin="anonymous"
@@ -44,6 +36,14 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -70,23 +70,12 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!--PRO MOBIL-->
-    <div id="mojeSidenav" class="mojesidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="index">Úvod</a>
-      <a href="kalkulacky">Vzorce a kalkulačky</a>
-      <a href="onasitride">O naší třídě</a>
-    </div>
+
     <div class="header">
       <div class="logo">
         <a href="index">
           <img src="logo-03.png" alt="Logo naší třídy" height="30px" />
         </a>
-      </div>
-      <div class="search">
-        <a href="search"><i class="fas fa-search"></i> </a>
       </div>
     </div>
 
@@ -97,19 +86,94 @@
     </div>
 
     <div class="content">
-      Na tomto tomto webu jsem využil následujíci zdroje:
-      <ul>
-        <li>
-          <a href="https://codepen.io/scanfcode/pen/MEZPNd">Footer Template</a>
-        </li>
-        <li>
-          <a href="https://www.w3schools.com/howto/howto_js_navbar_sticky.asp"
-            >Fixed Navbar</a
-          >
-        </li>
-        <li><a href="https://fontawesome.com/icons/">Ikonky</a></li>
-      </ul>
+      <div class="post_tags">
+        <div class="post_tag"><a href=""></a></div>
+        <div class="post_tag"><a href=""></a></div>
+        <div class="post_tag"><a href=""></a></div>
+        <div class="post_tag"><a href=""></a></div>
+        <div class="post_tag"><a href=""></a></div>
+      </div>
+      <!-- Posty -->
+      <div class="row">
+        <div class="col s6">
+          <div class="post hoverable card-panel">
+            <div class="post_title">Vzorce a Kalkulačky</div>
+            <div class="post_info">
+              <div class="post_info_author">
+                <i class="far fa-user"></i>
+                Tomáš Kebrle
+              </div>
+              <div class="post_info_date">
+                <i class="far fa-clock"></i>
+                15/6/2020
+              </div>
+              <br />
+              <div class="post_content">
+                Ahoj, jak už asi víte tak jsem na téhle stránce udělal
+                kalkulačky, které vám pomůžou s výpočtem vzorců, ale nejsem si
+                jistý jaké další kalkulačky/vzorce tam mám přidat takže pokud o
+                nějakých víte tak je prosím vyplňte do formuláře
+                <a href="formular">na tomto odkazu</a><br />
+                Předem děkuji
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6">
+          <div class="post hoverable card-panel">
+            <div class="post_title">Vítejte</div>
+            <div class="post_info">
+              <div class="post_info_author">
+                <i class="far fa-user"></i>
+                Tomáš Kebrle
+              </div>
+              <div class="post_info_date">
+                <i class="far fa-clock"></i>
+                12/6/2020
+              </div>
+              <br />
+              <div class="post_content">
+                Vítám vás na našem novém webu, doufám že se vám líbí. <br />
+                Na tomhle webu sice pravděpodobně nenajdete výpisky, ale
+                připravili jsme pro vás spoustu jiných věcí jako například
+                <a href="kalkulacky"
+                  >Výpis všech vzorců a dokonce proněkteré Kalkulačky</a
+                >
+                A postupně přidáme další. <br />
+                V patičce stránky najdete spoustu užitečných věcí, pokud chcete
+                můžete se tam kouknout na celý kód a spoustu dalších věcí
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
     <!-- Site footer -->
     <footer class="page-footer grey darken-3">
@@ -177,14 +241,6 @@
         } else {
           navbar.classList.remove('sticky');
         }
-      }
-      function openNav() {
-        document.getElementById('mojeSidenav').style.width = '350px';
-      }
-
-      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-      function closeNav() {
-        document.getElementById('mojeSidenav').style.width = '0';
       }
     </script>
   </body>

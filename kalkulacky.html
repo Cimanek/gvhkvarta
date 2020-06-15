@@ -56,6 +56,16 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <!--PRO MOBIL-->
+    <div id="mojeSidenav" class="mojesidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index">Úvod</a>
+      <a href="kalkulacky">Vzorce a kalkulačky</a>
+      <a href="onasitride">O naší třídě</a>
+    </div>
+
     <div class="header">
       <div class="header_logo">
         <a href="index">
@@ -67,7 +77,7 @@
     <div id="navbar">
       <a class="active" href="index">Úvod</a>
       <a href="kalkulacky">Kalkulačky</a>
-      <a href="javascript:void(0)">Contact</a>
+      <a href="onasitride">O naší třídě</a>
     </div>
 
     <div class="content">
@@ -212,6 +222,15 @@
         } else {
           navbar.classList.remove('sticky');
         }
+      }
+
+      function openNav() {
+        document.getElementById('mojeSidenav').style.width = '350px';
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById('mojeSidenav').style.width = '0';
       }
     </script>
 
