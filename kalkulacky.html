@@ -15,16 +15,20 @@
       })(window, document, 'script', 'dataLayer', 'GTM-MM79V2N');
     </script>
     <!-- End Google Tag Manager -->
-    
+
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-     
+
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="" />
     <meta charset="utf-8" />
     <title>Úvod|gvhkvarta.cf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/29ece32e74.js"
       crossorigin="anonymous"
@@ -80,180 +84,370 @@
       <a href="onasitride">O naší třídě</a>
     </div>
 
-    <div class="content">
+    <div class="content container">
       <div class="vyber">
         <h1>Vyberte si z jakého předmětu chcete kalkulačku</h1>
         <div class="vyber_tlacitko"><a href="#fyzika">Fyzika</a></div>
         <div class="vyber_tlacitko"><a href="#matematika">Matematika</a></div>
         <div class="vyber_tlacitko"><a href="#chemie">Chemie</a></div>
       </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card red darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Varování</span>
+              <p>
+                Pokud potřebujete počítat s decimálnímy hodnoty tak prosím
+                použijte tečku <b>.</b> a ne čárku <b>,</b> <br />
+                Je to kvůli programovacímu jazyku, který používám pro výpočet a
+                jsem línej tam přidávat spoustu kódu který by to opravil. <br />
+                A taky jsem línej udělat kéd na zaokrouhlování, tak si to
+                zaokrouhlete samy.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="http://www.ecmascript.org/"
+                >Můžete napsat autorům JavaScriptu</a
+              >
+              <a href="https://github.com/Kendy205/gvhkvarta"
+                >Přispět kódem na vyřešení</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
       <script src="kalkulacky.js"></script>
 
-      <div class="fyzika" id="myDIV">
-        <div class="fyzika_title" onclick="changeSize()">Fyzika</div>
-        <div class="fyzika_calcs" id="calcs">
+      <div class="fyzika" id="fyzika">
+        <div class="calc_title"><h2>Fyzika</h2></div>
+        <div class="calcs" id="calcs">
           <div class="calcs_nav">
-            <h4>Vyberte si typ Kalkulačky</h4>
+            <h6>Vyberte si typ Kalkulačky</h6>
 
             <ul>
               <li><a href="#rezistory_ser">Sériově zapojený rezistory</a></li>
               <li><a href="#rezistory_par">Parelelně zapojený rezistory</a></li>
+              <li><a href="#teplo">Teplo</a></li>
             </ul>
           </div>
-      
-<!-- Sériově zapojený rezistory-->
-          <div class="fyzika_calc" id="rezistory_ser">
-            <div class="fyzika_subtitle">Rezistory</div>
-            <div class="fyzika_calc_title">Sériově zapojený rezistory</div><br>
-            <div class="fyzika_calc_content">
+
+          <!-- Sériově zapojený rezistory-->
+          <div class="calc" id="rezistory_ser">
+            <div class="calcs_subtitle">Rezistory</div>
+            <div class="calc_title">Sériově zapojený rezistory</div>
+            <br />
+            <div class="calc_content">
               Vzorec pro výpočet je R1 + R2, výsledek je poté v Ohmech
-            </div><br>
+            </div>
+            <br />
             <div class="row">
               <form class="col s12">
                 <div class="row">
                   <div class="input-field col s12">
-                    <input id="ser_rez1" type="text">
+                    <input id="ser_rez1" type="text" />
                     <label for="ser_rez2">Rezistor 1</label>
                   </div>
                 </div>
               </form>
             </div>
 
-            <div class="row ">
+            <div class="row">
               <form class="col s12">
                 <div class="row">
                   <div class="input-field col s12">
-                    <input id="ser_rez2" type="text">
+                    <input id="ser_rez2" type="text" />
                     <label for="ser_rez2">Rezistor 2</label>
                   </div>
                 </div>
               </form>
             </div>
             <div class="count" onclick="serRez()">
-              <a class="waves-effect waves-light btn light-blue darken-4">Čáry máry výsledek je tu</a>
+              <a class="waves-effect waves-light btn light-blue darken-4"
+                >Čáry máry výsledek je tu</a
+              >
             </div>
-           </div>
-            <b>Výsledek je:</b>
-            <div id="ser_rez_vys"></div><b>Ω</b>
-            <br><br>
+            <div class="row">
+              <b class="col s2">Výsledek je:</b>
+              <div id="ser_rez_vys" class="col s1"></div>
+              <b class="col s1">Ω</b> <br /><br />
+            </div>
+          </div>
 
-<!--Pararelní rezistory-->
-            <div class="fyzika_calc" id="rezistory_par">
-              <div class="fyzika_calc_title">Pararelně zapojený rezistory</div><br>
-              <div class="fyzika_calc_content">
-                Vzorec pro výpočet R1 * R2 / R1 + R2
+          <!--Pararelní rezistory-->
+          <div class="calc" id="rezistory_par">
+            <div class="calc_title">Pararelně zapojený rezistory</div>
+            <br />
+            <div class="calc_content">
+              Vzorec pro výpočet R1 * R2 / R1 + R2
+            </div>
+            <br />
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="par_rez1" type="text" />
+                    <label for="par_rez1">Rezistor 1</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="par_rez2" type="text" class="validate" />
+                    <label for="par_rez2">Rezistor 2</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="count" onclick="parRez()">
+              <a class="waves-effect waves-light btn light-blue darken-4"
+                >Výpočítej to!</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <b class="col s2">Výsledek je:</b>
+            <div id="par_rez_vys" class="col s1"></div>
+            <b class="col s1">Ω</b><br />
+          </div>
+        </div>
+
+        <!--Teplo-->
+
+        <div class="calc" id="teplo">
+          <div class="calc_title">Teplo</div>
+          <br />
+          <div class="calc_content">
+            Vzorec pro výpočet Q = m.c.(t0 - t)
+          </div>
+          <br />
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="teploM" type="text" />
+                  <label for="teploM">Váha = M v kg</label>
+                </div>
               </div>
-              <br>
+            </form>
+          </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="teploC" type="text" class="validate" />
+                  <label for="teploC">C (C vody = 4180 J/kg)</label>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="teploT" type="text" class="validate" />
+                  <label for="teploT"
+                    >delta T (O kolik stupňů se voda ohřeje)</label
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="count" onclick="teplo()">
+            <a class="waves-effect waves-light btn light-blue darken-4"
+              >Výpočítej to!</a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <b class="col s2">Výsledek je:</b>
+          <div id="teplo_vys" class="col s1"></div>
+          <b class="col s1">J</b>
+          <br />
+        </div>
+        <!--Matematika-->
+        <div class="matematika" id="matematika">
+          <div class="calc_title">
+            <h2>Matematika</h2>
+          </div>
+          <div class="calcs_nav">
+            <h6>Vyberte si typ Kalkulačky</h6>
+
+            <ul>
+              <li><a href="#obs_val">Obsah válce</a></li>
+            </ul>
+          </div>
+          <div class="calcs">
+            <div class="calc" id="obs_val">
+              <div class="calcs_subtitle">Obsah válce</div>
+              <div class="calc_title">Obsah pláště</div>
+              <br />
+              <div class="calc_content">
+                Obsah plášte válce vypočítáme pomocí vzorce 2*π*r*v
+                <b>v</b> znamená výšku válce,<b>r</b> poloměr.
+              </div>
+              <br />
+
               <div class="row">
                 <form class="col s12">
                   <div class="row">
                     <div class="input-field col s12">
-                      <input id="par_rez1" type="text">
-                      <label for="par_rez1">Rezistor 1</label>
+                      <input id="obs_pla_v" type="text" />
+                      <label for="obs_pla_v">V (Výška)</label>
                     </div>
                   </div>
                 </form>
               </div>
-  
+
               <div class="row">
                 <form class="col s12">
                   <div class="row">
                     <div class="input-field col s12">
-                      <input id="par_rez2" type="text" class="validate">
-                      <label for="par_rez2">Rezistor 2</label>
+                      <input id="obs_pla_r" type="text" />
+                      <label for="obs_pla_r">R (Poloměr)</label>
                     </div>
                   </div>
                 </form>
               </div>
-              <div class="count" onclick="parRez()">
-                <a class="waves-effect waves-light btn light-blue darken-4">Výpočítej to!</a>
+
+              <div class="count" onclick="obsPla()">
+                <a class="waves-effect waves-light btn light-blue darken-4"
+                  >funkce vypocitat() {int.start} <br
+                /></a>
               </div>
-             </div>
-              <b>Výsledek je:</b>
-              <div id="par_rez_vys"></div> <b>Ω</b><br>
+              <div class="row">
+                <b class="col s2">Výsledek je:</b>
+                <div id="obs_pla_vys" class="col s1"></div>
+                <b class="col s1">cm <sup>2</sup> </b>
+                <br /><br />
+              </div>
             </div>
 
-<!--Teplo-->
-        
-    <div class="fyzika_calc" id="teplo">
-      <div class="fyzika_calc_title">Teplo</div><br>
-      <div class="fyzika_calc_content">
-        Vzorec pro výpočet Q = m.c.(t0 - t)
-      </div>
-      <br>
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="teploM" type="text">
-              <label for="teploM">Váha = M v kg</label>
+            <div class="calc" id="obs_pod">
+              <div class="calc_title">Obsah podstav</div>
+              <br />
+              <div class="calc_content">
+                Obsah podstavy válce vypočítáme pomocí vzorce 2*π*r<sup>2</sup>
+              </div>
+              <br />
+
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="obs_pod_r" type="text" />
+                      <label for="obs_pod_r">R (Poloměr)</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="count" onclick="obsPod()">
+                <a class="waves-effect waves-light btn light-blue darken-4"
+                  >funkce vypocitat() {int.start} <br
+                /></a>
+              </div>
+              <div class="row">
+                <b class="col s2">Výsledek je:</b>
+                <div id="obs_pod_vys" class="col s1"></div>
+                <b class="col s1">cm <sup>2</sup></b>
+              </div>
+              <br /><br />
+            </div>
+
+            <div class="calc" id="obs_kru">
+              <div class="calc_title">Obsah kruhu</div>
+              <br />
+              <div class="calc_content">
+                Obsah kruhu vypočítáme pomocí vzorce π*r<sup>2</sup>
+              </div>
+              <br />
+
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="obs_kru_r" type="text" />
+                      <label for="obs_kru_r">R (Poloměr)</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="count" onclick="obsKru()">
+                <a class="waves-effect waves-light btn light-blue darken-4"
+                  >Bíp bíp píp
+                </a>
+              </div>
+              <div class="row">
+                <b class="col s2">Výsledek je:</b>
+                <div id="obs_kru_vys" class="col s1"></div>
+                <b class="col s1">cm <sup>2</sup></b>
+                <br /><br /><br /><br /><br /><br />
+              </div>
             </div>
           </div>
-        </form>
+        </div>
       </div>
+    </div>
+    <!--Footer-->
 
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="teploC" type="text" class="validate">
-              <label for="teploC">C (C vody = 4180 J/kg)</label>
-            </div>
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">GVH KVARTA</h5>
+            <p class="grey-text text-lighten-4">
+              Jednoduchý web stvořený pro naší třídu. <br />
+              Používáním webu také souhlasíte s
+              <a href="podminky">Podmínkama používání</a>
+            </p>
           </div>
-        </form>
-      </div>
-
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="teploT" type="text" class="validate">
-              <label for="teploT">delta T (O kolik stupňů se voda ohřeje)</label>
-            </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Odkazy</h5>
+            <ul>
+              <li>
+                <a
+                  class="grey-text text-lighten-3 footer_link"
+                  href="https://github.com/Kendy205/gvhkvarta"
+                  >Přispějte svým kódem</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3 footer_link" href="sitemap"
+                  >Mapa Stránek</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3 footer_link" href="resources"
+                  >Zdroje</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3 footer_link"
+                  href="https://discord.gg/8ZVu3na"
+                  >Připoj se na náš Discord</a
+                >
+              </li>
+            </ul>
           </div>
-        </form>
+        </div>
       </div>
-      <div class="count" onclick="teplo()">
-        <a class="waves-effect waves-light btn light-blue darken-4">Výpočítej to!</a>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 gvhkvarta.cf
+          <a class="grey-text text-lighten-4 right" href="podminky"
+            >Privacy Policy</a
+          >
+        </div>
       </div>
-     </div>
-      <b>Výsledek je:</b>
-      <div id="teplo_vys"></div> <b>J</b><br>
-    </div>
-        
-          </div>
-      </div>
-    </div>
-
- <!--Footer-->   
-
- <footer class="page-footer grey darken-3">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">GVH KVARTA</h5>
-        <p class="grey-text text-lighten-4">Jednoduchý web stvořený pro naší třídu. <br>
-        Používáním webu také souhlasíte s <a href="podminky">Podmínkama používání</a>
-        </p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Odkazy</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3 footer_link" href="#!">Přispějte svým kódem</a></li>
-          <li><a class="grey-text text-lighten-3 footer_link" href="sitemap">Mapa Stránek</a></li>
-          <li><a class="grey-text text-lighten-3 footer_link" href="resources">Zdroje</a></li>
-          <li><a class="grey-text text-lighten-3 footer_link" href="https://discord.gg/8ZVu3na">Připoj se na náš Discord</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-    © 2020 gvhkvarta.cf
-    <a class="grey-text text-lighten-4 right" href="podminky">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
+    </footer>
     <!--Scripty-->
     <script src="kalkulacky.js"></script>
     <script>
