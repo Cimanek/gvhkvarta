@@ -136,6 +136,7 @@
             <b>Výsledek je:</b>
             <div id="ser_rez_vys"></div><b>Ω</b>
             <br><br>
+
 <!--Pararelní rezistory-->
             <div class="fyzika_calc" id="rezistory_par">
               <div class="fyzika_calc_title">Pararelně zapojený rezistory</div><br>
@@ -170,10 +171,57 @@
              </div>
               <b>Výsledek je:</b>
               <div id="par_rez_vys"></div> <b>Ω</b><br>
+            </div>
 
-
+<!--Teplo-->
+        
+    <div class="fyzika_calc" id="teplo">
+      <div class="fyzika_calc_title">Teplo</div><br>
+      <div class="fyzika_calc_content">
+        Vzorec pro výpočet Q = m.c.(t0 - t)
+      </div>
+      <br>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="teploM" type="text">
+              <label for="teploM">Váha = M v kg</label>
+            </div>
           </div>
-        </div>
+        </form>
+      </div>
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="teploC" type="text" class="validate">
+              <label for="teploC">C (C vody = 4180 J/kg)</label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="teploT" type="text" class="validate">
+              <label for="teploT">delta T (O kolik stupňů se voda ohřeje)</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="count" onclick="teplo()">
+        <a class="waves-effect waves-light btn light-blue darken-4">Výpočítej to!</a>
+      </div>
+     </div>
+      <b>Výsledek je:</b>
+      <div id="teplo_vys"></div> <b>J</b><br>
+    </div>
+        
+          </div>
       </div>
     </div>
 
@@ -232,12 +280,6 @@
       function closeNav() {
         document.getElementById('mojeSidenav').style.width = '0';
       }
-    </script>
-
-    <script>
-      import { MDCRipple } from '@material/ripple';
-
-      const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
     </script>
   </body>
 </html>

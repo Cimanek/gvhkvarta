@@ -36,4 +36,21 @@ function parRez() {
   document.getElementById('par_rez_vys').innerHTML = parRezVys;
 }
 
+//Teplo
+function teplo() {
+  //Získaní dat z inputu
+  var teploM = document.getElementById('teploM').value;
+  var teploC = document.getElementById('teploC').value;
+  var teploT = document.getElementById('teploT').value;
+  //Převedení z stringu na INT
+  var teploMNum = parseInt(teploM);
+  var teploCNum = parseInt(teploC);
+  var teploTNum = parseInt(teploT);
+  //Výpočet
+  var teploVys = teploMNum * teploCNum * teploTNum;
+  //Zobrazilo v HTML
+  document.getElementById('teplo_vys').innerHTML = teploVys;
+  console.log('Ahoj');
+}
+
 //!Matematika
