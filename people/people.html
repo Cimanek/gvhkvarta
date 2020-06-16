@@ -80,21 +80,28 @@
             <a href="onasitride">O naší třídě</a>
           </div>
 
-    <div class="header">
-      <div class="logo">
-        <a href="index">
-          <img src="logo-03.png" alt="Logo naší třídy" height="30px" />
-        </a>
-      </div>
-    </div>
+        <!--PRO PC-->
+        <div class="desktop_nav hide-on-med-and-down">
+          <div class="header">
+            <div class="logo">
+              <a href="index">
+                <img src="logo-03.png" alt="Logo naší třídy" height="30px" />
+              </a>
+            </div>
+          </div>
+          <div id="navbar">
+            <a class="active" href="index">Úvod</a>
+            <a href="kalkulacky">Vzorce a Kalkulačky</a>
+            <a href="onasitride">O naší třídě</a>
+          </div>
+        </div>
 
-    <div id="navbar">
-      <a class="active" href="index">Úvod</a>
-      <a href="kalkulacky">Vzorce a Kalkulačky</a>
-      <a href="onasitride">O naší třídě</a>
-    </div>
-
-    <div class="content">
+    <div class="content container">
+      <span
+      onClick="openNav()"
+      class="openbtn show-on-med-and-down hide-on-large-only"
+      >☰</span
+    >
         <div class="center-align">
             <div class="input-field col s6">
                 <input id="pass" type="text" class="validate">
