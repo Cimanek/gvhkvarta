@@ -89,3 +89,18 @@ function obsKru() {
   var obsKruVys = piTri * rTriNumDru;
   document.getElementById('obs_kru_vys').innerHTML = obsKruVys;
 }
+
+
+//Objem válce
+
+function objVal() {
+  var objValPi = 3.14;
+  var objValV = document.getElementById('obj_val_v').value;
+  var objValR = document.getElementById('obj_val_r').value;
+  var objValVFl = parseFloat(objValV);
+  var objValRFl = parseFloat(objValR);
+  var objValRDru = objValRFl * objValRFl;
+  var objValVys = objValPi * objValRDru * objValVFl;
+  var objValRouVys = objValVys.toFixed(3)
+  document.getElementById('obj_val_vys').innerHTML = objValRouVys;
+}
