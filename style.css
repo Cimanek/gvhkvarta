@@ -8,6 +8,20 @@ body {
   margin: 0;
 }
 
+.btn-small a{
+  text-decoration: none;
+  color: #000;
+}
+
+table a:hover{
+  text-decoration: none;
+  color: 000;
+}
+
+.content i{
+  color: #000;
+}
+
 .content a {
   color: #0257d6;
   text-decoration: underline;
@@ -15,6 +29,10 @@ body {
 
 .content a:hover {
   text-decoration: none;
+}
+
+i {
+  color:#fff;
 }
 
 .header_logo {
@@ -32,9 +50,16 @@ body {
 
 /*Posty*/
 .post {
-  border-left: 4px solid #252f6c;
   padding: 18px;
   transition: 0.5s;
+}
+
+.border_red{
+  border-left: 4px solid #c7230d;
+}
+
+.border_blue{
+  border-left: 4px solid #252f6c;
 }
 
 .post_title {
@@ -96,6 +121,21 @@ body {
 .row a {
   text-decoration: none;
 }
+
+
+/* Lidé */
+.pointer{
+  cursor: pointer;
+}
+
+.chips a{
+  color: #000;
+}
+
+.chips a:hover{
+  color: #000;
+}
+
 /* IDEA: To co jsem ukradl */
 
 .header {

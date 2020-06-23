@@ -1,222 +1,474 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-MM79V2N');
-    </script>
-    <!-- End Google Tag Manager -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="" />
-    <meta charset="utf-8" />
-    <title>Úvod|gvhkvarta.cf</title>
-    <script
-      src="https://kit.fontawesome.com/29ece32e74.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-130079000-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MM79V2N');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/png" href="" />
+  <meta charset="utf-8" />
+  <title>Úvod|gvhkvarta.cf</title>
+  <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
-      gtag('config', 'UA-130079000-2');
-    </script>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-MM79V2N"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden;"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-        <!--PRO MOBIL-->
-        <div id="mojeSidenav" class="mojesidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-              >&times;</a
-            >
-            <a href="index">Úvod</a>
-            <a href="kalkulacky">Vzorce a kalkulačky</a>
-            <a href="onasitride">O naší třídě</a>
-          </div>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130079000-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-        <!--PRO PC-->
-        <div class="desktop_nav hide-on-med-and-down">
-          <div class="header">
-            <div class="logo">
-              <a href="index">
-                <img src="logo-03.png" alt="Logo naší třídy" height="30px" />
-              </a>
-            </div>
-          </div>
-          <div id="navbar">
-            <a class="active" href="index">Úvod</a>
-            <a href="kalkulacky">Vzorce a Kalkulačky</a>
-            <a href="onasitride">O naší třídě</a>
-          </div>
-        </div>
+    gtag('config', 'UA-130079000-2');
+  </script>
+</head>
 
-    <div class="content container">
-      <span
-      onClick="openNav()"
-      class="openbtn show-on-med-and-down hide-on-large-only"
-      >☰</span
-    >
-        <div class="center-align">
-            <div class="input-field col s6">
-                <input id="pass" type="text" class="validate">
-                <label for="pass">Zadejte heslo</label>
-              </div>
-            </div>
-            <a class="waves-effect waves-light btn green darken-1" onclick="passConfirm()" id="confirm" href="#">Potvrdit</a>
-        </div>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM79V2N" height="0" width="0"
+      style="display: none; visibility: hidden;"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!--PRO MOBIL-->
+  <div id="mojeSidenav" class="mojesidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index">Úvod</a>
+    <a href="kalkulacky">Vzorce a kalkulačky</a>
+    <a href="onasitride">O naší třídě</a>
+  </div>
+
+  <!--PRO PC-->
+  <div class="desktop_nav hide-on-med-and-down">
+    <div class="header">
+      <div class="logo">
+        <a href="index">
+          <img src="/logo-03.png" alt="Logo naší třídy" height="30px" />
+        </a>
+      </div>
     </div>
-    <script>
-        function passConfirm() {
-        var pass = document.getElementById('pass').value;
-        document.getElementById('confirm').href = 'passwords/' + pass + '.html';
-}
-    </script>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <!-- Site footer -->
-    <footer class="page-footer grey darken-3">
+    <div id="navbar">
+      <a class="active" href="index">Úvod</a>
+      <a href="kalkulacky">Vzorce a Kalkulačky</a>
+      <a href="onasitride">O naší třídě</a>
+    </div>
+  </div>
+
+  <div class="content container">
+    <span onClick="openNav()" class="openbtn show-on-med-and-down hide-on-large-only">☰</span>
+
+    <h1>O naší třídě</h1>
+
+    <h3>Lidé v naší třídě</h3>
+    <i>*Předem se omlouvám jestli jsem někomu zkonil jméno <br> btw. ta tabulka má sama o sobě 300 řádku takže je dost
+      pravděpodobný že tam chyba je</i>
+    <table class="responsive-table centered">
+      <thead>
+        <tr>
+          <th>Pořadí</th>
+          <th>Jméno</th>
+          <th>Příjmení</th>
+          <th>Více INFO</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="hoverable pointer">
+          <td>1.</td>
+          <td>Jan</td>
+          <td>Auský</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="jan-ausky">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>2.</td>
+          <td>Lenka</td>
+          <td>Drbohlavová</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="lenka-drbohlavova">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>3.</td>
+          <td>Josef</td>
+          <td>Frolík</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="josef-frolik">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>4.</td>
+          <td>Jan</td>
+          <td>Grunt</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="jan-grunt">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>5.</td>
+          <td>Patrik</td>
+          <td>Hausner</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="patrik-hausner">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>6.</td>
+          <td>Vojtěch</td>
+          <td>Hořčička</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="vojtech-horcicka">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>7.</td>
+          <td>Tomáš</td>
+          <td>Tomáš Hořejší</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="tomas-horejsi">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>8.</td>
+          <td>Tomáš</td>
+          <td>Kebrle</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="tomas-kebrle">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>9.</td>
+          <td>Eva</td>
+          <td>Kernerová</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="eva-kernerova">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>10.</td>
+          <td>Nela</td>
+          <td>Kernerová</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="nela-kernerova">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>11.</td>
+          <td>Linda</td>
+          <td>Krylová</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="linda-krylova">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>12.</td>
+          <td>Adéla</td>
+          <td>Kusá</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="adela-kusa">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>13.</td>
+          <td>Emma Alžběta</td>
+          <td>Matějková</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="ema-matejkova">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>14.</td>
+          <td>Evelina</td>
+          <td>Mytskanyuk</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="evelina-mytskanyuk">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>15.</td>
+          <td>Václav</td>
+          <td>Parma</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="vaclav-parma">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>16.</td>
+          <td>Magdaléna</td>
+          <td>Petrusová</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="magdalena-petrusova">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>17.</td>
+          <td>Daniel</td>
+          <td>Ransdorf</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="daniel-ransdorf">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>18.</td>
+          <td>Tadeáš</td>
+          <td>Soukup</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="tadeas-soukup">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>19.</td>
+          <td>David</td>
+          <td>Srbek</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="david-srbek">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>20.</td>
+          <td>Matěj</td>
+          <td>Srbek</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="matej-srbek">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>21.</td>
+          <td>Maja</td>
+          <td>Šedivá</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="maja-sediva">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>22.</td>
+          <td>Marc</td>
+          <td>Thiebaut</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="marc-thiebaut">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>23.</td>
+          <td>Lucie</td>
+          <td>Trubačová</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="lucie-trubacova">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>24.</td>
+          <td>Alexandra</td>
+          <td>Witmayerová</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="alexandra-witmayerová">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>25.</td>
+          <td>Petr</td>
+          <td>Volek</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="petr-volek">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>26.</td>
+          <td>Eliška</td>
+          <td>Witošová</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="eliska-vitosova">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>27.</td>
+          <td>Jan</td>
+          <td>Zeman</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="jan-zeman">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+        <tr class="hoverable pointer">
+          <td>28.</td>
+          <td>Magdaléna</td>
+          <td>Zouharová</td>
+          <td>
+            <a class="waves-effect waves-light btn-small light-blue darken-4" href="magdalena-zouharova">
+              <i class="fas fa-plus"></i>
+            </a>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>>
+  <!-- Site footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">GVH KVARTA</h5>
+          <p class="grey-text text-lighten-4">
+            Jednoduchý web stvořený pro naší třídu. <br />
+            Používáním webu také souhlasíte s
+            <a href="podminky">Podmínkama používání</a>
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Odkazy</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3 footer_link" href="#!">Přispějte svým kódem</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3 footer_link" href="sitemap">Mapa Stránek</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3 footer_link" href="resources">Zdroje</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3 footer_link" href="https://discord.gg/8ZVu3na">Připoj se na náš
+                Discord</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
       <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">GVH KVARTA</h5>
-            <p class="grey-text text-lighten-4">
-              Jednoduchý web stvořený pro naší třídu. <br />
-              Používáním webu také souhlasíte s
-              <a href="podminky">Podmínkama používání</a>
-            </p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Odkazy</h5>
-            <ul>
-              <li>
-                <a class="grey-text text-lighten-3 footer_link" href="#!"
-                  >Přispějte svým kódem</a
-                >
-              </li>
-              <li>
-                <a class="grey-text text-lighten-3 footer_link" href="sitemap"
-                  >Mapa Stránek</a
-                >
-              </li>
-              <li>
-                <a class="grey-text text-lighten-3 footer_link" href="resources"
-                  >Zdroje</a
-                >
-              </li>
-              <li>
-                <a
-                  class="grey-text text-lighten-3 footer_link"
-                  href="https://discord.gg/8ZVu3na"
-                  >Připoj se na náš Discord</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+        © 2020 gvhkvarta.cf
+        <a class="grey-text text-lighten-4 right" href="podminky">Podmínky Používání</a>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-          © 2020 gvhkvarta.cf
-          <a class="grey-text text-lighten-4 right" href="podminky"
-            >Podmínky Používání</a
-          >
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!--Scripty-->
-    <script>
-      window.onscroll = function () {
-        myFunction();
-      };
+  <!--Scripty-->
+  <script>
+    window.onscroll = function () {
+      myFunction();
+    };
 
-      var navbar = document.getElementById('navbar');
-      var sticky = navbar.offsetTop;
+    var navbar = document.getElementById('navbar');
+    var sticky = navbar.offsetTop;
 
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add('sticky');
-        } else {
-          navbar.classList.remove('sticky');
-        }
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
       }
-      function openNav() {
-        document.getElementById('mojeSidenav').style.width = '350px';
-      }
+    }
+    function openNav() {
+      document.getElementById('mojeSidenav').style.width = '350px';
+    }
 
-      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-      function closeNav() {
-        document.getElementById('mojeSidenav').style.width = '0';
-      }
-    </script>
-  </body>
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById('mojeSidenav').style.width = '0';
+    }
+  </script>
+</body>
+
 </html>
